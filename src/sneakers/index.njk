@@ -1,0 +1,13 @@
+---
+title: Alla sneakers
+---
+
+<h2>Lista över alla sneakers</h2>
+
+<ul>
+    {% for sneaker in collections.sneakers %}
+    <li>
+        <a href="{{sneaker.data.page.url}}">{{sneaker.data.title}}</a>
+    </li>
+    {%endfor%}
+</ul>
